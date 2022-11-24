@@ -1,0 +1,2 @@
+!function(){var t,n={body:document.querySelector("body"),startBtn:document.querySelector("[data-start]"),stopBtn:document.querySelector("[data-stop]")};function e(){n.body.style.backgroundColor="#".concat(Math.floor(16777215*Math.random()).toString(16))}n.stopBtn.disabled=!0,n.startBtn.addEventListener("click",(function(){n.stopBtn.disabled=!1,n.startBtn.disabled=!0,t=setInterval((function(){e()}),1e3)})),n.stopBtn.addEventListener("click",(function(){n.stopBtn.disabled=!0,n.startBtn.disabled=!1,clearInterval(t)}))}();
+//# sourceMappingURL=01-color-switcher.53a289f9.js.map
