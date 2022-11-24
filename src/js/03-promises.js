@@ -1,7 +1,7 @@
 function createPromise(position, delay) {
   const shouldResolve = Math.random() > 0.3;
   const promise = new Promise((resolve, reject) => {
-    timerId = setTimeout(() => {
+    setTimeout(() => {
     if (shouldResolve) {
       resolve(`✅ Fulfilled promise ${position} in ${delay}ms`);
     } else {
@@ -29,7 +29,7 @@ form.addEventListener('submit', (e) => {
       if (counter === +amount) {
         clearInterval(timerId);
       }
-      },interval)
+      }, interval)
   }, delay)
   e.target.reset();
 });
